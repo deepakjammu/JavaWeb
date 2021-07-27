@@ -27,7 +27,6 @@
         <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url>
   </repository>
 </distributionManagement>
-</project>
 <build>
 		<plugins>
 

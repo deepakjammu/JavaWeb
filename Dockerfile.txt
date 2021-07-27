@@ -1,9 +1,0 @@
-FROM centos:7
-COPY ..
-WORKDIR /JavaWeb
-RUN yum -y install maven
-RUN mvn package
-RUN yum -y install wget
-RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz
-RUN xvf tar apache-tomcat-7.0.94.tar.gz
-RUN mv /JavaWeb/target/WebAppCal-0.0.6.war apache-tomcat-7.0.94/webapps
